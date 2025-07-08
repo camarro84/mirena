@@ -12,15 +12,18 @@
 <body>
 
     <header class="header">
-        <div class="container">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img src="img/logo.svg" alt="Mirena Logo"></a>
             <nav class="nav">
-                <a href="#" class="logo"><img src="img/logo.svg" alt="Mirena Logo"></a>
                 <ul class="nav-list">
-                    <li><a href="#services">Usługi</a></li>
-                    <li><a href="#about">O nas</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#services" class="nav-link">Usługi</a></li>
+                    <li><a href="#about" class="nav-link">O nas</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
                 </ul>
             </nav>
+            <button class="nav-toggle" aria-label="otwórz nawigację">
+                <span class="hamburger"></span>
+            </button>
         </div>
     </header>
 
@@ -28,11 +31,11 @@
         <section class="hero">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <h1 class="fade-in">Czystość, która robi wrażenie</h1>
-                    <p class="fade-in delay-1">Zapewniamy idealny porządek w Twoim domu i biurze we Wrocławiu. Zaufaj profesjonalistom.</p>
-                    <a href="#contact" class="btn fade-in delay-2">Bezpłatna wycena</a>
+                    <h1 class="animate-on-load">Czystość, która robi wrażenie</h1>
+                    <p class="animate-on-load delay-1">Zapewniamy idealny porządek w Twoim domu i biurze we Wrocławiu. Zaufaj profesjonalistom.</p>
+                    <a href="#contact" class="btn animate-on-load delay-2">Bezpłatna wycena</a>
                 </div>
-                <div class="hero-image fade-in delay-3">
+                <div class="hero-image animate-on-load delay-3">
                     <img src="img/hero-illustration.svg" alt="Profesjonalne sprzątanie">
                 </div>
             </div>
@@ -40,7 +43,7 @@
 
         <section id="services" class="services">
             <div class="container">
-                <h2 class="section-title">Nasze usługi</h2>
+                <h2 class="section-title animate-on-scroll">Nasze usługi</h2>
                 <div class="services-grid">
                     <div class="service-card animate-on-scroll">
                         <img src="img/service-icon1.svg" alt="Ikona sprzątania mieszkań">
@@ -63,12 +66,30 @@
 
         <section id="about" class="about">
             <div class="container">
-                <h2 class="section-title">Dlaczego Mirena?</h2>
+                <h2 class="section-title animate-on-scroll">Dlaczego Mirena?</h2>
                 <p class="about-text animate-on-scroll">Jesteśmy zespołem doświadczonych profesjonalistów, dla których czystość to pasja. Używamy sprawdzonych środków i nowoczesnego sprzętu, gwarantując najwyższą jakość usług i Twoje pełne zadowolenie.</p>
             </div>
         </section>
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="section-title">Skontaktuj się z nami</h2>
-                <p>Potrzebujesz indywidualnej wyceny
+                <h2 class="section-title animate-on-scroll">Skontaktuj się z nami</h2>
+                <p class="animate-on-scroll">Potrzebujesz indywidualnej wyceny lub chcesz umówić termin? Jesteśmy do Twojej dyspozycji.</p>
+                <div class="contact-info animate-on-scroll">
+                    <p><strong>Adres:</strong> ul. Przykładowa 1, 50-001 Wrocław</p>
+                    <p><strong>Telefon:</strong> <a href="tel:+48000000000">+48 000 000 000</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mirena. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

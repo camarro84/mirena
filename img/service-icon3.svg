@@ -1,1 +1,13 @@
-
+<svg width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5">
+  <defs>
+      <linearGradient id="iconGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6a11cb" />
+        <stop offset="100%" stop-color="#2575fc" />
+      </linearGradient>
+  </defs>
+  <path stroke="url(#iconGradient3)" stroke-linecap="round" stroke-linejoin="round" d="M12 22C12 22 15 16.1265 15 13C15 9.87349 12 4 12 4C12 4 9 9.87349 9 13C9 16.1265 12 22 12 22Z"/>
+  <path stroke="url(#iconGradient3)" stroke-linecap="round" stroke-linejoin="round" d="M19 14C19.8284 14 20.5 13.3284 20.5 12.5C20.5 11.6716 19.8284 11 19 11"/>
+  <path stroke="url(#iconGradient3)" stroke-linecap="round" stroke-linejoin="round" d="M17 9C17.5523 9 18 8.55228 18 8C18 7.44772 17.5523 7 17 7"/>
+  <path stroke="#B0B0B0" stroke-linecap="round" stroke-linejoin="round" d="M9 19C7.89543 19 7 18.1046 7 17"/>
+  <path stroke="#B0B0B0" stroke-linecap="round" stroke-linejoin="round" d="M15 19C16.1046 19 17 18.1046 17 17"/>
+</svg>

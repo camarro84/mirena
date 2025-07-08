@@ -20,17 +20,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Scroll Animations ---
+    // --- Scroll Animations (REUSABLE) ---
     const animationOptions = {
         rootMargin: '0px',
         threshold: 0.25 // Trigger when 25% of the element is visible
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                // When element enters viewport, add class to animate
                 entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target); // Animate only once
+            } else {
+                // When element leaves viewport, remove class to reset animation
+                entry.target.classList.remove('is-visible');
             }
         });
     }, animationOptions);
